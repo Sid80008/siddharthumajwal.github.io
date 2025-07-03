@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -12,6 +13,7 @@
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
+
       <div class="logo">My Portfolio</div>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
@@ -19,6 +21,7 @@
         <li><a href="#services">Talents</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="your-resume.pdf" class="btn">Download Resume</a></li> -->
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -60,7 +63,7 @@
         </div>
        <div class="service-card">
          <h3>Photography</h3>
-         <p>Best natural proffesional photography.</p>
+         <p>High-quality, natural professional photography.</p>
        </div>
       </div>
     </div>
@@ -104,12 +107,13 @@
   <!-- Contact Form -->
   <section id="contact" class="contact section">
     <h2>Contact Me</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
+    <form action="https://formspree.io/f/xrbkdykl" method="POST" class="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
   </section>
 
   <!-- Footer -->
@@ -122,7 +126,7 @@
     <div id="myemail">
         <p>siddharthumajwal@gmail.com</p>
     </div>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>© 2025 Siddharth Umajwal. All rights reserved.</p>
   </footer>
 
 </body>
